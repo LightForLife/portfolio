@@ -1,16 +1,9 @@
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div>
+      <h1 className="text-3xl font-bold underline font-['Poppins']">
+        Hello world!
+      </h1>
     </div>
   );
 };
