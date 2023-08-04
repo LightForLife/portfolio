@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './Navbar/Navbar';
 import Banner from './Banner/Banner';
-import Features from './Features/Features';
+import Projects from './Projects/Projects';
 
 export const App = () => {
   return (
@@ -9,7 +9,8 @@ export const App = () => {
       <div className="max-w-screen-2xl mx-auto px-16">
         <Navbar />
         <Banner />
-        <Features />
+        {/* <Features /> */}
+        <Projects />
       </div>
     </div>
   );
