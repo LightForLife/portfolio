@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './Navbar/Navbar';
 import Banner from './Banner/Banner';
 import Projects from './Projects/Projects';
+import Resume from './Resume/Resume';
 
 export const App = () => {
   return (
@@ -11,6 +12,7 @@ export const App = () => {
         <Banner />
         {/* <Features /> */}
         <Projects />
+        <Resume />
       </div>
     </div>
   );
