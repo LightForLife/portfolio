@@ -1,29 +1,58 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Title from 'components/Layouts/Title';
-import ResumeCard from './ResumeCard';
 import Education from './Education';
 import Skills from './Skills';
 import Experience from './Experience';
 
 const Resume = () => {
+  const [education, setEducation] = useState(true);
+  const [skills, setSkills] = useState(false);
+  const [experience, setExperience] = useState(false);
+
   return (
-    <section
-      id="projects"
-      className="w-full py-20 border-b-[1px] border-b-black"
-    >
+    <section id="resume" className="w-full py-20 border-b-[1px] border-b-black">
       <div className="flex justify-center items-center text-center">
         <Title des="My Resume" />
       </div>
       <div>
         <ul className="w-full grid grid-cols-3">
-          <li className="resumeLi">Education</li>
-          <li className="resumeLi">Skills</li>
-          <li className="resumeLi">Experience</li>
+          <li
+            onClick={() =>
+              setEducation(true) & setSkills(false) & setExperience(false)
+            }
+            className={`${
+              education ? 'border-designColor rounded-lg' : 'border-transparent'
+            } resumeLi`}
+          >
+            Education
+          </li>
+          <li
+            onClick={() =>
+              setEducation(false) & setSkills(true) & setExperience(false)
+            }
+            className={`${
+              skills ? 'border-designColor rounded-lg' : 'border-transparent'
+            } resumeLi`}
+          >
+            Skills
+          </li>
+          <li
+            onClick={() =>
+              setEducation(false) & setSkills(false) & setExperience(true)
+            }
+            className={`${
+              experience
+                ? 'border-designColor rounded-lg'
+                : 'border-transparent'
+            } resumeLi`}
+          >
+            Experience
+          </li>
         </ul>
       </div>
-      {/* <Education /> */}
-      <Skills />
-      <Experience />
+      {education && <Education />}
+      {skills && <Skills />}
+      {experience && <Experience />}
     </section>
   );
 };
