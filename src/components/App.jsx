@@ -4,6 +4,7 @@ import Banner from './Banner/Banner';
 import Projects from './Projects/Projects';
 import Resume from './Resume/Resume';
 import Contacts from './Contacts/Contacts';
+import Footer from './Footer.js/Footer';
 
 export const App = () => {
   return (
@@ -15,6 +16,7 @@ export const App = () => {
         <Projects />
         <Resume />
         <Contacts />
+        <Footer />
       </div>
     </div>
   );
