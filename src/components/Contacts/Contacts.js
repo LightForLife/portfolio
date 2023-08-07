@@ -4,21 +4,42 @@ import ContactLeft from './ContactLeft';
 
 const Contacts = () => {
   const [name, setName] = useState('');
-  // const [email, setEmail] = useState('');
-  // const [subject, setSubject] = useState('');
-  // const [message, setMessage] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
-  // const [successMessage, setSuccessMessage] = useState('');
+  const [successMessage, setSuccessMessage] = useState('');
+
+  //=============== Email Validation start ===============
+  const emailValidation = () => {
+    return String(email)
+      .toLocaleLowerCase()
+      .match(/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/);
+  };
+  //=============== Email Validation end ===============
 
   const handleSubmit = e => {
     e.preventDefault();
-    if (name === '') {
-      setErrorMessage('Name is required field!');
+    if (name.trim() === '') {
+      setErrorMessage('Name is required!');
+    } else if (email === '') {
+      setErrorMessage('Please give your Email!');
+    } else if (!emailValidation(email)) {
+      setErrorMessage('Give a valid Email!');
+    } else if (subject.trim() === '') {
+      setErrorMessage('Please give your Subject!');
+    } else if (message.trim() === '') {
+      setErrorMessage('Message is required!');
     } else {
+      setSuccessMessage(
+        `Thank you dear ${name}, Your Messages has been sent Successfully!`
+      );
+      setErrorMessage('');
       setName('');
+      setEmail('');
+      setSubject('');
+      setMessage('');
     }
-
-    console.log(errorMessage);
   };
 
   return (
@@ -34,6 +55,16 @@ const Contacts = () => {
           <ContactLeft />
           <div className="w-[60%] h-full py-10 bg-gradient-to-r from-[#1e2024] to-[#23272b] flex flex-col gap-8 p-8 rounded-lg shadow-shadowOne">
             <form className="w-full flex flex-col gap-6">
+              {errorMessage && (
+                <p className="py-3 bg-gradient-to-r from-[#1e2024] to-[#23272b] shadow-shadowOne text-center text-orange-500 text-base tracking-wide animate-bounce">
+                  {errorMessage}
+                </p>
+              )}
+              {successMessage && !errorMessage && (
+                <p className="py-3 bg-gradient-to-r from-[#1e2024] to-[#23272b] shadow-shadowOne text-center text-green-500 text-base tracking-wide animate-bounce">
+                  {successMessage}
+                </p>
+              )}
               <div className="w-full flex gap-10">
                 <div className="w-1/2 flex  flex-col gap-4">
                   <p className="text-sm text-gray-400 uppercase tracking-wide">
@@ -50,20 +81,32 @@ const Contacts = () => {
                   <p className="text-sm text-gray-400 uppercase tracking-wide">
                     Email
                   </p>
-                  <input type="email" className="contactInput"></input>
+                  <input
+                    onChange={e => setEmail(e.target.value)}
+                    value={email}
+                    type="email"
+                    className="contactInput"
+                  ></input>
                 </div>
               </div>
               <div className="flex flex-col gap-4">
                 <p className="text-sm text-gray-400 uppercase tracking-wide">
                   Subject
                 </p>
-                <input type="text" className="contactInput"></input>
+                <input
+                  onChange={e => setSubject(e.target.value)}
+                  value={subject}
+                  type="text"
+                  className="contactInput"
+                ></input>
               </div>
               <div className="flex flex-col gap-4">
                 <p className="text-sm text-gray-400 uppercase tracking-wide">
                   Your message
                 </p>
                 <textarea
+                  onChange={e => setMessage(e.target.value)}
+                  value={message}
                   cols="30"
                   rows="8"
                   className="contactTextArea"
@@ -78,6 +121,16 @@ const Contacts = () => {
                   Send Message
                 </button>
               </div>
+              {errorMessage && (
+                <p className="py-3 bg-gradient-to-r from-[#1e2024] to-[#23272b] shadow-shadowOne text-center text-orange-500 text-base tracking-wide animate-bounce">
+                  {errorMessage}
+                </p>
+              )}
+              {successMessage && !errorMessage && (
+                <p className="py-3 bg-gradient-to-r from-[#1e2024] to-[#23272b] shadow-shadowOne text-center text-green-500 text-base tracking-wide animate-bounce">
+                  {successMessage}
+                </p>
+              )}
             </form>
           </div>
         </div>
