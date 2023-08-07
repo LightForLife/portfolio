@@ -12,10 +12,10 @@ const Resume = () => {
   return (
     <section id="resume" className="w-full py-20 border-b-[1px] border-b-black">
       <div className="flex justify-center items-center text-center">
-        <Title des="My Resume" />
+        <Title des="My Resume" title="resume" />
       </div>
       <div>
-        <ul className="w-full grid grid-cols-3">
+        <ul className="w-full grid grid-cols-1 lgl:grid-cols-3">
           <li
             onClick={() =>
               setEducation(true) & setSkills(false) & setExperience(false)

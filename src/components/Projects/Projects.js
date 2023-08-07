@@ -12,7 +12,7 @@ const Projects = () => {
       <div className="flex justify-center items-center text-center">
         <Title title="Visit my portfolio" des="My Projects" />
       </div>
-      <div className="grid grid-cols-3 gap-14">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
         <ProjectsCard
           title="Wibe Studio"
           des="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
@@ -38,11 +38,6 @@ const Projects = () => {
           des="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
           src={webstudio}
         />
-        {/* <ProjectsCard
-          title="Wibe Studio"
-          des="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-          src={filmoteka}
-        /> */}
       </div>
     </section>
   );

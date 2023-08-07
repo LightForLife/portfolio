@@ -6,16 +6,16 @@ const Skills = () => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 0.5 } }}
-      className="w-full flex gap-20"
+      className="pt-12 font-titleFont flex flex-col lgl:flex-row gap-20"
     >
-      <div className="w-1/2">
-        <div className="py-12 font-titleFont flex flex-col gap-4">
+      <div className="w-full lgl:w-1/2 flex flex-col gap-10">
+        <div className="w-full flex flex-col gap-4">
           <p className="text-sm text-designColor tracking-[4px] uppercase">
             Features
           </p>
-          <h2 className="text-4xl font-bold">Hard Skills</h2>
+          <h2 className="text-3xl md:text-4xl font-bold">Hard Skills</h2>
         </div>
-        <div className="mt-14 w-full flex flex-col gap-6">
+        <div className="flex flex-col gap-6">
           <div className="overflow-x-hidden">
             <p className="text-sm uppercase font-medium">React</p>
             <span className="w-full h-2 bgOpacity inline-flex rounded-md mt-2">
@@ -41,14 +41,14 @@ const Skills = () => {
         </div>
       </div>
 
-      <div className="w-1/2">
-        <div className="py-12 font-titleFont flex flex-col gap-4">
+      <div className="w-full lgl:w-1/2 flex flex-col gap-10">
+        <div className="w-full flex flex-col gap-4">
           <p className="text-sm text-designColor tracking-[4px] uppercase">
             Features
           </p>
-          <h2 className="text-4xl font-bold">Soft Skills</h2>
+          <h2 className="text-3xl md:text-4xl font-bold">Soft Skills</h2>
         </div>
-        <div className="mt-14 w-full flex flex-col gap-6">
+        <div className="flex flex-col gap-6">
           <div className="overflow-x-hidden">
             <p className="text-sm uppercase font-medium">React</p>
             <span className="w-full h-2 bgOpacity inline-flex rounded-md mt-2">
