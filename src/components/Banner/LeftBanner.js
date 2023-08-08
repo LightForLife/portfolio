@@ -45,7 +45,7 @@ const LeftBanner = () => {
           backend technologies.
         </p>
       </div>
-      <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">
+      <div className="flex flex-col xl:flex-row gap-6 xl:gap-0 justify-between">
         <div>
           <h2 className="text-base font-titleFont mb-4 uppercase ">
             Find me in
