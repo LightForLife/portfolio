@@ -51,10 +51,10 @@ const Contacts = () => {
         <Title title="Contacts" des="Contact with me" />
       </div>
       <div className="w-full">
-        <div className="w-full h-auto flex justify-between">
+        <div className="w-full h-auto flex flex-col gap-6 lgl:gap-0 lgl:flex-row justify-between">
           <ContactLeft />
-          <div className="w-[60%] h-full py-10 bg-gradient-to-r from-[#1e2024] to-[#23272b] flex flex-col gap-8 p-8 rounded-lg shadow-shadowOne">
-            <form className="w-full flex flex-col gap-6">
+          <div className="w-full lgl:w-[60%] h-full py-10 bg-gradient-to-r from-[#1e2024] to-[#23272b] flex flex-col gap-8 p-4 lgl:p-8 rounded-lg shadow-shadowOne">
+            <form className="w-full flex flex-col gap-6 py-2 lgl:py-5">
               {errorMessage && (
                 <p className="py-3 bg-gradient-to-r from-[#1e2024] to-[#23272b] shadow-shadowOne text-center text-orange-500 text-base tracking-wide animate-bounce">
                   {errorMessage}
@@ -65,8 +65,8 @@ const Contacts = () => {
                   {successMessage}
                 </p>
               )}
-              <div className="w-full flex gap-10">
-                <div className="w-1/2 flex  flex-col gap-4">
+              <div className="w-full flex flex-col lgl:flex-row gap-6 lgl:gap-10">
+                <div className="w-full lgl:w-1/2 flex  flex-col gap-2 lgl:gap-4">
                   <p className="text-sm text-gray-400 uppercase tracking-wide">
                     Name
                   </p>
@@ -77,7 +77,7 @@ const Contacts = () => {
                     className="contactInput"
                   ></input>
                 </div>
-                <div className="w-1/2 flex flex-col gap-4">
+                <div className="w-full lgl:w-1/2 flex flex-col gap-2 lgl:gap-4">
                   <p className="text-sm text-gray-400 uppercase tracking-wide">
                     Email
                   </p>
@@ -89,7 +89,7 @@ const Contacts = () => {
                   ></input>
                 </div>
               </div>
-              <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-2 lgl:gap-4">
                 <p className="text-sm text-gray-400 uppercase tracking-wide">
                   Subject
                 </p>
@@ -100,7 +100,7 @@ const Contacts = () => {
                   className="contactInput"
                 ></input>
               </div>
-              <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-2 lgl:gap-4">
                 <p className="text-sm text-gray-400 uppercase tracking-wide">
                   Your message
                 </p>

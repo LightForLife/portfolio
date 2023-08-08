@@ -10,7 +10,7 @@ const Navbar = () => {
         <img src={logo} alt="logo" className="w-16 h-auto" />
       </div>
       <div>
-        <ul className="flex items-center gap-10">
+        <ul className="hidden mdl:inline-flex items-center gap-10">
           {navLinksData.map(({ _id, title, link }) => (
             <li
               className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300"
