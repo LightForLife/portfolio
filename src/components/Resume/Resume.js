@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Title from 'components/Layouts/Title';
 import Education from './Education';
 import Skills from './Skills';
-import Experience from './Experience';
+// import Experience from './Experience';
 import Languages from './Languages';
 
 const Resume = () => {
@@ -14,7 +14,7 @@ const Resume = () => {
   return (
     <section id="resume" className="w-full py-20 border-b-[1px] border-b-black">
       <div className="flex justify-center items-center text-center">
-        <Title des="Resume" title="Here's a little about me" />
+        <Title des="Resume" title="Here is a little about my skills" />
       </div>
       <div>
         <ul className="w-full grid grid-cols-1 lgl:grid-cols-3">

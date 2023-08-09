@@ -2,6 +2,7 @@ import React from 'react';
 import Title from 'components/Layouts/Title';
 import ProjectsCard from './ProjectsCard';
 import { filmoteka, ice, pet, wibe, webstudio } from '../../assets/index';
+import { tagsWibe } from 'constants';
 
 const Projects = () => {
   return (
@@ -10,7 +11,7 @@ const Projects = () => {
       className="w-full py-20 border-b-[1px] border-b-black"
     >
       <div className="flex justify-center items-center text-center">
-        <Title title="Visit my portfolio" des="Projects" />
+        <Title title="What i do" des="Projects" />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 xl:gap-14">
         <ProjectsCard
@@ -22,6 +23,7 @@ const Projects = () => {
           siteLink="https://lightforlife.github.io/fashion-studio/"
           role="Individual project."
           technology="React JS, Styled Components, Locomotive Scroll, GSAP, Framer Motion"
+          tags={tagsWibe}
         />
         <ProjectsCard
           title="Pets Support"
@@ -31,6 +33,7 @@ const Projects = () => {
           siteLink="https://alexandra-makarenko.github.io/pets-support-team-project"
           role="Role: developer"
           technology="HTML, JavaScript, React, Redux, Axios, Styled Components, Node JS, Mongo DB, Parsel"
+          tags={tagsWibe}
         />
         <ProjectsCard
           title="Filmoteka"
@@ -40,6 +43,7 @@ const Projects = () => {
           siteLink="https://alexandra-makarenko.github.io/filmoteka-js-team-project/"
           role="Role: developer"
           technology="HTML, SASS, JavaScript, REST API, Parsel"
+          tags={tagsWibe}
         />
         <ProjectsCard
           title="Ice Cream"
@@ -49,6 +53,7 @@ const Projects = () => {
           siteLink="https://victoriia-ripka.github.io/IceCream-team-project/"
           role="Role: developer"
           technology="HTML, SASS, JavaScript, Parsel"
+          tags={tagsWibe}
         />
         <ProjectsCard
           title="WebStudio"
@@ -58,6 +63,7 @@ const Projects = () => {
           siteLink="https://lightforlife.github.io/goit-markup-hw-08/"
           role="Individual project."
           technology="HTML, CSS, SASS"
+          tags={tagsWibe}
         />
       </div>
     </section>

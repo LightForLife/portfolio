@@ -9,7 +9,7 @@ const ProjectsCard = ({
   githubLink,
   siteLink,
   role,
-  technology,
+  tags,
 }) => {
   return (
     <div className="w-full p-4 xl:px-12 h-auto xl:py-10 rounded-lg shadow-shadowOne flex flex-col bg-gradient-to-r from-bodyColor to-[#202327] group hover:bg-gradient-to-b hover:from-gray-900 hover:gray-900 transition-colors  duration-1000">
@@ -51,9 +51,13 @@ const ProjectsCard = ({
           <p className="text-sm tracking-wide mt-3 group-hover:text-gray-100 duration-300">
             {role}
           </p>
-          <p className="text-sm tracking-wide mt-3 group-hover:text-gray-100 duration-300">
-            Technology stack: {technology}
-          </p>
+          <ul className="mt-4 flex flex-wrap gap-2">
+            {tags.map((tag, index) => (
+              <li key={index} className={`font-normal ${tag.color}`}>
+                #{tag.name}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </div>

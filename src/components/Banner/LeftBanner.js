@@ -1,19 +1,12 @@
 import React from 'react';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
-import {
-  FaLinkedinIn,
-  FaReact,
-  FaGithub,
-  FaTelegramPlane,
-} from 'react-icons/fa';
-import { SiTailwindcss, SiNextdotjs } from 'react-icons/si';
+import { FaLinkedinIn, FaGithub, FaTelegramPlane } from 'react-icons/fa';
 import Resume from '../../assets/Artur_Levchenko.pdf';
 
 const LeftBanner = () => {
   const [text] = useTypewriter({
-    // words: ['Guy-who-loves-Coffe.tsx', '<ButLovesToCodeMore />', 'Designer'],
     words: [
-      'Guy-who-loves-Coffe.tsx',
+      'Guy-who-loves-Coffee.js',
       '<ButLovesToCodeMore />',
       'Frontend Developer',
     ],
@@ -27,18 +20,12 @@ const LeftBanner = () => {
   return (
     <div className="w-full xl:w-1/2 flex flex-col gap-20">
       <div className="flex flex-col gap-5 font-titleFont">
-        <h4 className="text-lg font-normal uppercase">Welkome to my world</h4>
+        <h4 className="text-lg font-normal uppercase">Welcome to my site</h4>
         <h1 className="text-6xl font-bold text-white">
-          Hi, I'm
-          <span className="text-designColor capitalize">
-            {' '}
-            Artur
-            {/* {' '}
-            Frontend Developer */}
-          </span>
+          Hi, I'm <span className="text-designColor capitalize">Artur</span>
         </h1>
         <h2 className="text-4xl font-bold text-white">
-          <span>{text}</span>{' '}
+          <span>{text}</span>
           <Cursor
             cursorBlinking={false}
             cursorStyle="|"
