@@ -19,7 +19,7 @@ const Education = () => {
             title="GoIT"
             subTitle="Programming courses (2022 - 2023)"
             result="5.00/5"
-            des="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            des="Full Stack Developer (HTML + CSS, JavaScript, React, Node.js)"
           />
           <ResumeCard
             title="GoIT"
