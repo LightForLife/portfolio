@@ -18,13 +18,15 @@ const LeftBanner = () => {
   });
 
   return (
-    <div className="w-full xl:w-1/2 flex flex-col gap-20">
+    <div className="w-full xl:w-1/2 flex flex-col px-4 md:px-0 gap-20">
       <div className="flex flex-col gap-5 font-titleFont">
-        <h4 className="text-lg font-normal uppercase">Welcome to my site</h4>
-        <h1 className="text-6xl font-bold text-white">
+        <h4 className="text-base sml:text-lg font-normal uppercase">
+          Welcome to my site
+        </h4>
+        <h1 className="text-4xl sml:text-5xl md:text-6xl font-bold text-white">
           Hi, I'm <span className="text-designColor capitalize">Artur</span>
         </h1>
-        <h2 className="text-4xl font-bold text-white">
+        <h2 className="text-2xl sml:text-3xl md:text-4xl font-bold text-white">
           <span>{text}</span>
           <Cursor
             cursorBlinking={false}
@@ -46,15 +48,30 @@ const LeftBanner = () => {
             Find me in
           </h2>
           <div className="flex gap-4">
-            <span className="bannerIcon">
+            <a
+              href="https://www.linkedin.com/in/artur-levchenko/"
+              target="_blank"
+              rel="noreferrer"
+              className="bannerIcon"
+            >
               <FaLinkedinIn />
-            </span>
-            <span className="bannerIcon">
+            </a>
+            <a
+              href="https://t.me/Light_musical"
+              target="_blank"
+              rel="noreferrer"
+              className="bannerIcon"
+            >
               <FaTelegramPlane />
-            </span>
-            <span className="bannerIcon">
+            </a>
+            <a
+              href="https://github.com/LightForLife"
+              target="_blank"
+              rel="noreferrer"
+              className="bannerIcon"
+            >
               <FaGithub />
-            </span>
+            </a>
           </div>
         </div>
         <div>

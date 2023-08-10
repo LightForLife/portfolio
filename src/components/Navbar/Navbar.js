@@ -11,9 +11,9 @@ const Navbar = () => {
 
   return (
     <div className="w-full h-24 sticky top-0 z-50 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600">
-      <div>
+      <a href="/portfolio" className="py-4 cursor-pointer">
         <img src={logo} alt="logo" className="w-16 h-auto" />
-      </div>
+      </a>
       <div>
         <ul className="hidden mdl:inline-flex items-center gap-6 lg:gap-10">
           {navLinksData.map(({ _id, title, link }) => (
@@ -44,7 +44,9 @@ const Navbar = () => {
           <div className="w-[80%] h-screen overflow-scroll absolute top-0 left-0 bg-gray-900 p-4 scrollbar-hide">
             <div className="flex flex-col gap-8 py-2 relative">
               <div>
-                <img src={logo} alt="logo" className="w-16 h-auto" />
+                <a href="/portfolio" className="py-4 cursor-pointer">
+                  <img src={logo} alt="logo" className="w-16 h-auto" />
+                </a>
                 <p className="text-sm text-gray-400 mt-2">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
@@ -76,15 +78,30 @@ const Navbar = () => {
                   Find me in
                 </h2>
                 <div className="flex gap-4">
-                  <span className="bannerIcon">
+                  <a
+                    href="https://www.linkedin.com/in/artur-levchenko/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="bannerIcon"
+                  >
                     <FaLinkedinIn />
-                  </span>
-                  <span className="bannerIcon">
+                  </a>
+                  <a
+                    href="https://t.me/Light_musical"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="bannerIcon"
+                  >
                     <FaTelegramPlane />
-                  </span>
-                  <span className="bannerIcon">
+                  </a>
+                  <a
+                    href="https://github.com/LightForLife"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="bannerIcon"
+                  >
                     <FaGithub />
-                  </span>
+                  </a>
                 </div>
               </div>
               <span

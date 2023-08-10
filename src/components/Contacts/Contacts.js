@@ -15,7 +15,7 @@ const Contacts = () => {
       className="w-full py-20 border-b-[1px] border-b-black"
     >
       <div className="flex justify-center items-center text-center">
-        <Title title="Let's build something together" des="Contact" />
+        <Title title="Let's build something together" des="Contacts" />
       </div>
       <div className="w-full">
         <div className="w-full h-auto flex flex-col gap-6 lgl:gap-0 lgl:flex-row justify-between">
@@ -72,7 +72,7 @@ const Contacts = () => {
                 <button
                   // onClick={handleSubmit}
                   type="submit"
-                  className="w-full h-[55px] bg-[#141518] rounded-lg text-base text-gray-400 tracking-wider uppercase outline-none hover:text-white hover:border-[1px] focus:border-[1px] focus:border-designColor/60 hover:border-designColor/60 border-transparent duration-300"
+                  className="w-full h-12 bg-[#141518] rounded-lg text-base text-gray-400 tracking-wider uppercase outline-none hover:text-white hover:border-[1px] focus:border-[1px] focus:border-designColor/60 hover:border-designColor/60 border-transparent duration-300"
                 >
                   Send Message
                 </button>

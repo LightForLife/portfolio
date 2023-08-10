@@ -2,7 +2,13 @@ import React from 'react';
 import Title from 'components/Layouts/Title';
 import ProjectsCard from './ProjectsCard';
 import { filmoteka, ice, pet, wibe, webstudio } from '../../assets/index';
-import { tagsWibe } from 'constants';
+import {
+  wibeTags,
+  petSupportTags,
+  iceCreamTags,
+  filmotekaTags,
+  webStudioTags,
+} from 'constants';
 
 const Projects = () => {
   return (
@@ -23,17 +29,18 @@ const Projects = () => {
           siteLink="https://lightforlife.github.io/fashion-studio/"
           role="Individual project."
           technology="React JS, Styled Components, Locomotive Scroll, GSAP, Framer Motion"
-          tags={tagsWibe}
+          tags={wibeTags}
         />
         <ProjectsCard
           title="Pets Support"
-          des="The pet help project is designed with adaptive design in mind. Search for ads by category, registration, personal cabinet, the ability to save your favorite ads and add your own, a modal window with detailed information and contacts."
+          des="The pet help project is designed with adaptive design in mind. Search for ads by category, registration, personal cabinet, the ability to save your favorite ads and add your own."
           src={pet}
           githubLink="https://github.com/Alexandra-Makarenko/pets-support-team-project"
           siteLink="https://alexandra-makarenko.github.io/pets-support-team-project"
-          role="Role: developer"
+          role="Developer: registration and login pages, sorting by category, setting up Redux,
+          modal notice."
           technology="HTML, JavaScript, React, Redux, Axios, Styled Components, Node JS, Mongo DB, Parsel"
-          tags={tagsWibe}
+          tags={petSupportTags}
         />
         <ProjectsCard
           title="Filmoteka"
@@ -41,9 +48,9 @@ const Projects = () => {
           src={filmoteka}
           githubLink="https://github.com/Alexandra-Makarenko/filmoteka-js-team-project"
           siteLink="https://alexandra-makarenko.github.io/filmoteka-js-team-project/"
-          role="Role: developer"
+          role="Developer: pagination, up button."
           technology="HTML, SASS, JavaScript, REST API, Parsel"
-          tags={tagsWibe}
+          tags={filmotekaTags}
         />
         <ProjectsCard
           title="Ice Cream"
@@ -51,9 +58,10 @@ const Projects = () => {
           src={ice}
           githubLink="https://github.com/Victoriia-Ripka/IceCream-team-project"
           siteLink="https://victoriia-ripka.github.io/IceCream-team-project/"
-          role="Role: developer"
+          role="Developer: advantages section, help in the development of
+          the hero section."
           technology="HTML, SASS, JavaScript, Parsel"
-          tags={tagsWibe}
+          tags={iceCreamTags}
         />
         <ProjectsCard
           title="WebStudio"
@@ -63,7 +71,7 @@ const Projects = () => {
           siteLink="https://lightforlife.github.io/goit-markup-hw-08/"
           role="Individual project."
           technology="HTML, CSS, SASS"
-          tags={tagsWibe}
+          tags={webStudioTags}
         />
       </div>
     </section>

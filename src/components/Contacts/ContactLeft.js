@@ -25,17 +25,32 @@ const ContactLeft = () => {
         </p>
       </div>
       <div className="flex flex-col gap-4">
-        <h2 className="text-base uppercase font-titleFont mb-4">Find me in</h2>
+        <h2 className="text-base uppercase font-titleFont mb-2">Find me in</h2>
         <div className="flex gap-4">
-          <span className="bannerIcon">
+          <a
+            href="https://www.linkedin.com/in/artur-levchenko/"
+            target="_blank"
+            rel="noreferrer"
+            className="bannerIcon"
+          >
             <FaLinkedinIn />
-          </span>
-          <span className="bannerIcon">
+          </a>
+          <a
+            href="https://t.me/Light_musical"
+            target="_blank"
+            rel="noreferrer"
+            className="bannerIcon"
+          >
             <FaTelegramPlane />
-          </span>
-          <span className="bannerIcon">
+          </a>
+          <a
+            href="https://github.com/LightForLife"
+            target="_blank"
+            rel="noreferrer"
+            className="bannerIcon"
+          >
             <FaGithub />
-          </span>
+          </a>
         </div>
       </div>
     </div>

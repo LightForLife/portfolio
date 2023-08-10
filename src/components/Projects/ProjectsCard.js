@@ -20,21 +20,13 @@ const ProjectsCard = ({
           alt={title}
         />
       </div>
-      <div className="w-full mt-5 flex flex-col gap-6">
+      <div className="w-full h-1/2 mt-5 flex flex-col justify-between">
         <div>
           <div className="flex justify-between items-center">
             <h3 className="text-base text-designColor font-normal uppercase">
               {title}
             </h3>
             <div className="flex gap-2">
-              <a
-                href={githubLink}
-                target="_blank"
-                rel="noreferrer"
-                className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300 cursor-pointer"
-              >
-                <BsGithub />
-              </a>
               <a
                 href={siteLink}
                 target="_blank"
@@ -43,23 +35,34 @@ const ProjectsCard = ({
               >
                 <FaGlobe />
               </a>
+              <a
+                href={githubLink}
+                target="_blank"
+                rel="noreferrer"
+                className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300 cursor-pointer"
+              >
+                <BsGithub />
+              </a>
             </div>
           </div>
           <p className="text-sm tracking-wide mt-3 group-hover:text-gray-100 duration-300">
-            {des} <br />
+            {des}
+          </p>
+          <p className="text-sm tracking-wide mt-3 group-hover:text-gray-100 duration-300">
             {role}
           </p>
-          {/* <p className="text-sm tracking-wide mt-3 group-hover:text-gray-100 duration-300">
-            {role}
-          </p> */}
-          <ul className="mt-4 flex flex-wrap gap-2">
-            {tags.map((tag, index) => (
-              <li key={index} className={`font-normal ${tag.color}`}>
-                #{tag.name}
-              </li>
-            ))}
-          </ul>
         </div>
+
+        <ul className="mt-4 flex flex-wrap gap-2">
+          {tags.map((tag, index) => (
+            <li
+              key={index}
+              className="text-sm mdl:text-base bg-white/10 text-white/80 borderBlack rounded-xl px-3 py-1 shadow-shadowOne hover:text-gray-100"
+            >
+              {tag}
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );

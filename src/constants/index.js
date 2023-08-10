@@ -27,117 +27,33 @@ export const skillsData = [
   'Parsel',
 ];
 
-export const tagsWibe = [
-  {
-    name: 'React',
-    color: 'text-sky-300',
-  },
-  {
-    name: 'StyledComponents',
-    color: 'text-sky-300',
-  },
-  {
-    name: 'LocomotiveScroll',
-    color: 'text-sky-300',
-  },
-  {
-    name: 'GSAP',
-    color: 'text-sky-300',
-  },
-  {
-    name: 'FramerMotion',
-    color: 'text-sky-300',
-  },
+export const wibeTags = [
+  'React',
+  'Styled Components',
+  'Locomotive Scroll',
+  'GSAP',
+  'Framer Motion',
 ];
 
-export const tagsPetSupport = [
-  {
-    name: 'react',
-    color: 'text-red-500',
-  },
-  {
-    name: 'StyledComponents',
-    color: 'text-red-600',
-  },
-  {
-    name: 'Locomotive Scroll',
-    color: 'text-red-700',
-  },
-  {
-    name: 'Locomotive Scroll',
-    color: 'text-red-800',
-  },
-  {
-    name: 'Locomotive Scroll',
-    color: 'text-red-900',
-  },
+export const petSupportTags = [
+  'JavaScript',
+  'React',
+  'Redux',
+  'Axios',
+  'Styled Components',
+  'Node JS',
+  'Mongo DB',
+  'Parsel',
 ];
 
-export const tagsIceCream = [
-  {
-    name: 'react',
-    color: 'text-red-500',
-  },
-  {
-    name: 'StyledComponents',
-    color: 'text-red-600',
-  },
-  {
-    name: 'Locomotive Scroll',
-    color: 'text-red-700',
-  },
-  {
-    name: 'Locomotive Scroll',
-    color: 'text-red-800',
-  },
-  {
-    name: 'Locomotive Scroll',
-    color: 'text-red-900',
-  },
+export const iceCreamTags = ['HTML', 'SASS', 'JavaScript', 'Parsel'];
+
+export const filmotekaTags = [
+  'HTML',
+  'SASS',
+  'JavaScript',
+  'REST API',
+  'Parsel',
 ];
 
-export const tagsFilmoteka = [
-  {
-    name: 'react',
-    color: 'text-red-500',
-  },
-  {
-    name: 'StyledComponents',
-    color: 'text-red-600',
-  },
-  {
-    name: 'Locomotive Scroll',
-    color: 'text-red-700',
-  },
-  {
-    name: 'Locomotive Scroll',
-    color: 'text-red-800',
-  },
-  {
-    name: 'Locomotive Scroll',
-    color: 'text-red-900',
-  },
-];
-
-export const tagsWebStudio = [
-  {
-    name: 'react',
-    color: 'text-red-500',
-  },
-  {
-    name: 'StyledComponents',
-    color: 'text-red-600',
-  },
-  {
-    name: 'Locomotive Scroll',
-    color: 'text-red-700',
-  },
-  {
-    name: 'Locomotive Scroll',
-    color: 'text-red-800',
-  },
-  {
-    name: 'Locomotive Scroll',
-    color: 'text-red-900',
-  },
-];
+export const webStudioTags = ['HTML', 'CSS', 'SASS'];
