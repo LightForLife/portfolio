@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { skillsData } from 'constants';
-import { useForm, SubmitHandler } from 'react-hook-form';
 
 const fadeInAnimationVariants = {
   initial: {
