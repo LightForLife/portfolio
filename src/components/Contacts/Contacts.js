@@ -72,7 +72,7 @@ const Contacts = () => {
                 <button
                   // onClick={handleSubmit}
                   type="submit"
-                  className="w-full h-[55px] bg-[#141518] rounded-lg text-base text-gray-400 tracking-wider uppercase hover:text-white duration-300 hover:border-[1px] focus:border-designColor/60 hover:border-designColor/60 border-transparent"
+                  className="w-full h-[55px] bg-[#141518] rounded-lg text-base text-gray-400 tracking-wider uppercase outline-none hover:text-white hover:border-[1px] focus:border-[1px] focus:border-designColor/60 hover:border-designColor/60 border-transparent duration-300"
                 >
                   Send Message
                 </button>

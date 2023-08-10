@@ -46,11 +46,12 @@ const ProjectsCard = ({
             </div>
           </div>
           <p className="text-sm tracking-wide mt-3 group-hover:text-gray-100 duration-300">
-            {des}
-          </p>
-          <p className="text-sm tracking-wide mt-3 group-hover:text-gray-100 duration-300">
+            {des} <br />
             {role}
           </p>
+          {/* <p className="text-sm tracking-wide mt-3 group-hover:text-gray-100 duration-300">
+            {role}
+          </p> */}
           <ul className="mt-4 flex flex-wrap gap-2">
             {tags.map((tag, index) => (
               <li key={index} className={`font-normal ${tag.color}`}>
