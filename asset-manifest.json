@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.7e25ce3e.css",
-    "main.js": "/portfolio/static/js/main.e24c6999.js",
+    "main.css": "/portfolio/static/css/main.b79ea698.css",
+    "main.js": "/portfolio/static/js/main.42bf9d50.js",
     "static/media/Artur_Levchenko.pdf": "/portfolio/static/media/Artur_Levchenko.5b051a38670111aa7cb0.pdf",
     "static/media/filmoteka.png": "/portfolio/static/media/filmoteka.db526c61055ebde7bfe5.png",
     "static/media/webstudio.png": "/portfolio/static/media/webstudio.03a6e9348578ac44791e.png",
@@ -11,11 +11,11 @@
     "static/media/contactImg.png": "/portfolio/static/media/contactImg.8ddfbfd11798f881db54.png",
     "static/media/banner.webp": "/portfolio/static/media/banner.b5943e903b6408d4a438.webp",
     "index.html": "/portfolio/index.html",
-    "main.7e25ce3e.css.map": "/portfolio/static/css/main.7e25ce3e.css.map",
-    "main.e24c6999.js.map": "/portfolio/static/js/main.e24c6999.js.map"
+    "main.b79ea698.css.map": "/portfolio/static/css/main.b79ea698.css.map",
+    "main.42bf9d50.js.map": "/portfolio/static/js/main.42bf9d50.js.map"
   },
   "entrypoints": [
-    "static/css/main.7e25ce3e.css",
-    "static/js/main.e24c6999.js"
+    "static/css/main.b79ea698.css",
+    "static/js/main.42bf9d50.js"
   ]
 }
