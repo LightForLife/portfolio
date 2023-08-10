@@ -48,9 +48,7 @@ const Navbar = () => {
                   <img src={logo} alt="logo" className="w-16 h-auto" />
                 </a>
                 <p className="text-sm text-gray-400 mt-2">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy
+                  Let's build something together
                 </p>
               </div>
               <ul className="flex flex-col gap-4">
